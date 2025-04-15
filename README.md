@@ -6,6 +6,9 @@ It's rewrited on Go [wu](https://github.com/kostya1F634/wu) script
 * 🚀 update wallpapers blazingly fast from terminal
 ## 💡 Idea of Usage
 ### 🌐 Browsing -> 🖼️ See Image -> 🔄 Update Wallpapers
+```shell
+wugo https://image-url.ext
+```
 ## 🔧 Installation from Source
 ### 📋 Requirements
 * 🛠️ make
