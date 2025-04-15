@@ -8,14 +8,23 @@ It's rewrited on Go [wu](https://github.com/kostya1F634/wu) script
 * 🚀 update wallpapers blazingly fast from terminal
 ## 💡 Idea of Usage
 ### 🌐 Browsing -> 🖼️ See Image -> 🔄 Update Wallpapers
-```shell
-wugo https://image-url.ext
+```sh
+wugo https://image-url.ext](https://example.com/image.jpg)
+```
+## 🧰 Options
+Saves the image to custom directory (default ~/wallpapers).
+```sh
+wugo -d ~/path/to/dir https://example.com/image.jpg
+```
+Temporarily saves the image to /tmp, without keeping it permanently.
+```sh
+wugo -ns https://example.com/image.jpg
 ```
 ## 🔧 Installation from Source
 ### 📋 Requirements
 * 🛠️ make
 * 🦫 Go
-```shell
+```sh
 git clone https://github.com/kostya1F634/wugo.git
 cd wugo
 make bin
