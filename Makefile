@@ -6,6 +6,7 @@ build:
 
 setup:
 	go mod tidy
+	go mod download
 
 bin: bin-dir setup build
 
