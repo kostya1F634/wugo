@@ -9,7 +9,7 @@ It's rewrited on Go [wu](https://github.com/kostya1F634/wu) script
 ## 💡 Idea of Usage
 ### 🌐 Browsing -> 🖼️ See Image -> 🔄 Update Wallpapers
 ```sh
-wugo https://image-url.ext](https://example.com/image.jpg)
+wugo https://example.com/image.jpg
 ```
 ## 🧰 Options
 Saves the image to custom directory (default ~/wallpapers).
