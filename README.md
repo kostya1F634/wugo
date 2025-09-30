@@ -1,32 +1,51 @@
 ![wugo_logo](https://github.com/user-attachments/assets/00770646-61fb-4e1b-98fa-fceeb1cd4aa3)
 
 # wugo — Wallpaper Updater (written on GO)
-It's rewrited on Go [wu](https://github.com/kostya1F634/wu) script
+
+It's rewritten on Go [wu](https://github.com/kostya1F634/wu) script
+
 ## ✨ Features
-* 🔄 easy way to update desktop and lock screen wallpaper simultaneously
-* ⚙️ automatically download updated wallpaper to directory with all wallpapers
-* 🚀 update wallpapers blazingly fast from terminal
+
+- 🔄 easy way to update desktop and lock screen wallpaper simultaneously
+- 🌐 download wallpapers from URLs or use local images
+- ⚙️ automatically organize wallpapers in a dedicated directory
+- 🚀 update wallpapers blazingly fast from terminal
+
 ## 💡 Idea of Usage
+
 ### 🌐 Browsing -> 🖼️ See Image -> 🔄 Update Wallpapers
+
 ```sh
 wugo https://example.com/image.jpg
+wugo image.png
+wugo /path/to/image.jpg
 ```
+
 ## 🧰 Options
-Saves the image to custom directory (default ~/wallpapers).
-```sh
+
+Saves/moves the image to custom directory (default ~/wallpapers).
+
+```
 wugo -d ~/path/to/dir https://example.com/image.jpg
+wugo -d ~/path/to/dir image.png
 ```
-Temporarily saves the image to /tmp, without keeping it permanently.
-```sh
-wugo -ns https://example.com/image.jpg
+
+Use local file without moving it to wallpapers directory.
+
 ```
+wugo -nm image.png
+```
+
 ## 🔧 Installation from Source
+
 ### 📋 Requirements
-* 🛠️ make
-* 🦫 Go
-```sh
+
+- 🛠️ make
+- 🦫 Go
+
+```
 git clone https://github.com/kostya1F634/wugo.git
 cd wugo
 make bin
-# binary in bin direcory
+# binary in bin directory
 ```
