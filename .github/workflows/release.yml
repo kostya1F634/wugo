@@ -38,7 +38,7 @@ jobs:
           GOARCH: ${{ matrix.goarch }}
         run: |
           mkdir -p dist
-          go build -o dist/wugo-${{ matrix.goarch }} wugo.go
+          go build -o dist/wugo-${{ matrix.goarch }} ./cmd/wugo
 
       - name: Upload release binaries
         uses: softprops/action-gh-release@v1
