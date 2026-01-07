@@ -19,6 +19,7 @@ It's rewritten on Go [wu](https://github.com/kostya1F634/wu) script
 wugo https://example.com/image.jpg
 wugo image.png
 wugo /path/to/image.jpg
+wugo file:///path/to/image.jpg
 ```
 
 ## 🧰 Options
@@ -48,4 +49,11 @@ git clone https://github.com/kostya1F634/wugo.git
 cd wugo
 make bin
 # binary in bin directory
+```
+
+## 🧪 Development & Testing
+
+```sh
+go run ./cmd/wugo <image>
+go test ./...
 ```

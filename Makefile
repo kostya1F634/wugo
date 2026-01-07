@@ -1,8 +1,8 @@
-.PHONY: all build setup bin link
-all: build
+.PHONY: all build setup bin link test
+all: bin
 
-build: 
-	go build -o ./bin/wugo wugo.go
+build:
+	go build -o ./bin/wugo ./cmd/wugo
 
 setup:
 	go mod tidy
@@ -13,5 +13,6 @@ bin: bin-dir setup build
 bin-dir:
 	mkdir -p bin
 
-link:
-	sudo ln -sv "$$(pwd)/bin/wugo" /usr/local/bin/wugo
+test:
+	mkdir -p .cache/go-build
+	GOCACHE="$(CURDIR)/.cache/go-build" go test ./...
